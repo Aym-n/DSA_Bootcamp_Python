@@ -1,9 +1,10 @@
 def InsertionSort(arr):
-    for i in range(0,len(arr)-1):
+    for i in range(len(arr)-1):
         for j in range(i+1,0,-1):
-            if arr[i]>=arr[j]:
-                swap(arr,i,j)
-                print(arr)
+            if arr[j-1]>arr[j]:
+                swap(arr,j-1,j)
+            else:
+                break
 
 def swap(arr,first,last):
     temp = arr[first]
