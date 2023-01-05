@@ -16,6 +16,6 @@ def BSrecursion(arr,target,start,end):
 #    print(Fibo(i))
 
 arr = [1, 2, 3, 4, 55, 66, 78]
-target = 1s
+target = 1
 print(BSrecursion(arr,target,0,len(arr)))
 
